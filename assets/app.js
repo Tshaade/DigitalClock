@@ -7,11 +7,11 @@ function updateClock(){
     let h = new Date().getHours();
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
-    let ap = "AM";
+    let ap = "PM";
 
     if(h > 12){
         h = h - 12;
-        ap = "PM";
+        ap = "AM";
     }
 
     h = h < 10 ? "0" + h : h;
